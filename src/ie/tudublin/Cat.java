@@ -7,7 +7,7 @@ public class Cat extends Animal{
     public Cat(String name) {
         //Constructor chaining 
         super(name); //Animal constructor from cat constructor 
-        setNumLives();
+        setNumLives(9);
     }
 
     public int getNumLives() {
