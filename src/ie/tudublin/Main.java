@@ -24,10 +24,24 @@ public class Main {
 
         //This is compile 
         //This is an example of a cast 
-        System.out.println(((cat)mino).getNumLives()); 
+        System.out.println(((Cat)mino).getNumLives()); 
         
         mino = new Dog("Misty"); // type is Animal so it will compile 
-        topcat = new Dog("Tara"); // won't compile cause type is cat 
+        //topcat = new Dog("Tara"); // won't compile cause type is cat 
+
+        Animal a = new Cat("a");
+        Animal b = new Cat("b");
+
+        System.out.println(a); //called toString method 
+        System.out.println(b); //called toString method 
+
+        a = b;
+
+        a.setName("c");
+
+        System.out.println(a); //called toString method 
+        System.out.println(b); //called toString method  
+        // think about instance of subclass!!!!! 
 
     }
 }
